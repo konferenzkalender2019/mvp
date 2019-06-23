@@ -1,0 +1,5 @@
+- root component
+  - header component
+  - content component
+    - event component
+  - footer component
