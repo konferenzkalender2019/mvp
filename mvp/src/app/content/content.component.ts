@@ -8,12 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class ContentComponent implements OnInit {
 
   events = [
-    {name: 'Veranstaltung 1',
-     url: 'https://lorempixel.com/400/200/business/5'},
-    {name: 'Veranstaltung 2',
-     url: 'https://lorempixel.com/400/200/business/6'},
-    {name: 'Veranstaltung 3', 
-     url: 'https://lorempixel.com/400/200/business/8'}
+    {name: 'GOTO BERLIN 2019',
+     url: 'https://lorempixel.com/400/200/business/5',
+    homePageUrl: 'https://gotober.com',
+    startDatum: ' 23.10.2019 ',
+    endDatum: '- 25.10.2019 '},
+    {name: 'BED CON 2019',
+     url: 'https://lorempixel.com/400/200/business/6',
+     homePageUrl: 'http://bed-con.org',
+     startDatum: '05.09.2019',
+     endDatum: '06.09.2019'},
+    
   ]
   
 
