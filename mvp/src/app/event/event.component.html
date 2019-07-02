@@ -6,7 +6,7 @@
       <div class="card-stacked">
         <div class="card-content">
           <h5>{{event.name}}</h5>
-          <p>{{event.startDatum}} {{event.endDatum}}</p>
+          <p>{{event.startDatum | date:"dd.MM.yyyy" }}  -  {{event.endDatum | date:"dd.MM.yyyy" }}</p>
         </div>
         <div class="card-action">
           <a target="_blank" href="{{event.homePageUrl}}">Mehr erfahren >></a>

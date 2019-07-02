@@ -11,13 +11,13 @@ export class ContentComponent implements OnInit {
     {name: 'GOTO BERLIN 2019',
      url: 'https://lorempixel.com/400/200/business/5',
     homePageUrl: 'https://gotober.com',
-    startDatum: ' 23.10.2019 ',
-    endDatum: '- 25.10.2019 '},
+    startDatum: new Date('2019, 10, 23'),
+    endDatum: new Date('2019, 10, 25')},
     {name: 'BED CON 2019',
-     url: 'https://lorempixel.com/400/200/business/6',
+     url: 'https://lorempixel.com/400/200/business/1',
      homePageUrl: 'http://bed-con.org',
-     startDatum: '05.09.2019',
-     endDatum: '06.09.2019'},
+     startDatum: new Date('2019, 09, 05'),
+     endDatum: new Date('2019, 09, 06')},
     
   ]
   
