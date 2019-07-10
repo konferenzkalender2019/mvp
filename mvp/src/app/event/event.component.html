@@ -1,5 +1,5 @@
 
-    <div class="card horizontal" *ngIf="event.startDatum.getTime >= event.todayDate.getTime">
+    <div class="card horizontal" *ngIf="event.startDatum.getTime() >= this.todayDate.getTime()">
       <div class="card-image">
         <img src={{event.url}}>
       </div>
