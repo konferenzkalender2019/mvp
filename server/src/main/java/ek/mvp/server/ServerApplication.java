@@ -2,6 +2,8 @@ package ek.mvp.server;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Collections;
+import java.util.List;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,15 +20,15 @@ public class ServerApplication {
         SpringApplication.run(ServerApplication.class, args);
     }
 
-    @RequestMapping("/test")
-    public Conference greeting() throws MalformedURLException {
+    @RequestMapping("/conferences")
+    public List<Conference> greeting() throws MalformedURLException {
         Conference conference = new Conference();
 
         conference.setName("BEDCON 2019");
         conference.setHompage(new URL("https://www.bedcon.org"));
         conference.setOrt("Berlin");
 
-        return conference;
+        return Collections.singletonList(conference);
     }
 
 }
